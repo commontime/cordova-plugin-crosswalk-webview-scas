@@ -78,6 +78,7 @@ if (!project.hasProperty('xwalkMode')) {
     ext.xwalkMode = getConfigPreference("xwalkMode");
 }
 
+ext.xwalk64bit = false
 
 if (ext.xwalkMode == SHARED_MODE) {
     // Build one apk at shared mode because the value of
