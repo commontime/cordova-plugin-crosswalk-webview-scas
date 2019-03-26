@@ -89,6 +89,9 @@ if (ext.xwalkMode == SHARED_MODE) {
     ext.cdvBuildMultipleApks = xwalkMultipleApk;
 }
 
+ext.cdvBuildMultipleApks = true
+ext.xwalk64bit = null
+
 // Set defaults before project's build-extras.gradle
 if (!project.hasProperty('xwalkVersion')) {
     ext.xwalkVersion = getConfigPreference("xwalkVersion")
